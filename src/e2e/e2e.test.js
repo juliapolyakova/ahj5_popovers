@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import puppetteer from 'puppeteer';
-const puppeteer = require('puppeteer');
 
+const puppeteer = require('puppeteer');
 
 jest.setTimeout(30000); // default puppeteer timeout
 
@@ -19,7 +20,7 @@ describe('validation form', () => {
     page = await browser.newPage();
   });
 
-  afterAll(async () => { 
+  afterAll(async () => {
     await browser.close();
   });
 
